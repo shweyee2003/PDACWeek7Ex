@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v7.widget.CardView-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="300dp"-->
+    <!--android:layout_gravity="center">-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rv_topimg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <xyz.aungpyaephyo.padc.myanmarattractions.components.DynamicHeightImageView
+        android:id="@+id/iv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sample_attraction_thumbnail"
+        />
+    <RelativeLayout
+        android:id="@+id/rv_loginform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_input"
+        android:layout_marginLeft="@dimen/margin_xlarge"
+        android:layout_marginRight="@dimen/margin_xlarge"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/align_login"
+        android:backgroundTint="#FFF">
+        <xyz.aungpyaephyo.padc.myanmarattractions.components.MMTextView
+            android:id="@+id/lbl_login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/text_white_ish"
+            android:padding="@dimen/margin_medium_2"
+            android:background="?attr/colorPrimary"
+            android:drawableRight="@drawable/ic_clear_24dp"
+            android:drawablePadding="@dimen/margin_medium"
+
+            />
+
+        <xyz.aungpyaephyo.padc.myanmarattractions.components.MMEditText
+            android:id="@+id/et_email"
+            android:layout_width="@dimen/input_box_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_regular_2x"
+            android:hint="@string/msg_enter_email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/hint_secondary_text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_below="@id/lbl_login_title"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            />
+
+        <xyz.aungpyaephyo.padc.myanmarattractions.components.MMEditText
+            android:id="@+id/et_password"
+            android:layout_width="@dimen/input_box_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_regular_2x"
+            android:hint="@string/msg_enter_password_register"
+            android:inputType="textPassword"
+            android:textColorHint="@color/hint_secondary_text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:drawableRight="@drawable/ic_visibility_24dp"
+            android:drawablePadding="@dimen/margin_medium"
+            android:layout_below="@id/et_email"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            />
+
+        <xyz.aungpyaephyo.padc.myanmarattractions.components.MMButton
+            android:id="@+id/btn_login"
+            style="@style/AccentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_password"
+            android:layout_margin="@dimen/margin_medium_2"
+            android:text="@string/lbl_login_action"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"/>
+
+        <xyz.aungpyaephyo.padc.myanmarattractions.components.MMTextView
+            android:id="@+id/lbl_forgetpsw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@id/btn_login"
+            android:layout_margin="@dimen/margin_small"
+            android:textColor="@color/hint_secondary_text"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            />
+
+        <xyz.aungpyaephyo.padc.myanmarattractions.components.MMTextView
+            android:id="@+id/tv_createacc"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textAlignment="center"
+            android:layout_below="@id/lbl_forgetpsw"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:textColor="@color/hint_secondary_text"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+    <!--</android.support.v7.widget.CardView>-->
